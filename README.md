@@ -19,4 +19,9 @@
    ```sh
    $ psql -U <USER_NAME> -p <PORT> -h <HOST> -d <DB_NAME>
    ```
-5. 
+5. Create database "FiberApp" en la base
+   ```sh
+   $ 
+   ```
+6. 
+7. 
