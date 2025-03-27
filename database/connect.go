@@ -31,6 +31,10 @@ func ConnectDB() {
 	if err != nil {
 		panic("Failed to connect to the database!")
 	}
+	defer func() {
+		dbInstance, _ := DB.DB()
+		_ = dbInstance.Close()
+	}()
 
 	fmt.Println("Connection Opened to Database")
 
